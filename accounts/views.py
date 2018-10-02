@@ -23,10 +23,11 @@ def login(request):
             user = auth.authenticate(username=request.POST['username'],
                                      password=request.POST['password'])
                                      
-            messages.success(request, "You Have Successfully Logged Into Your Account")
+           
             
             if user:
                 auth.login(user=user, request=request)
+                messages.success(request, "You Have Successfully Logged Into Your Account")
             else:
                 login_form.add_error(None, "Your Username Or Password Is Invalid")
     else:
