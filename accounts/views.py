@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import auth, messages
+from accounts.forms import userloginform
 
 
 def index(request):
@@ -13,4 +14,5 @@ def logout(request):
     return redirect(reverse('index'))
     
 def login(request):
-    return render(request, 'login.html')
+    login_form = userloginform()
+    return render(request, 'login.html', {'login_form': login_form})
