@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import auth, messages
+from django.contrib.auth.decorators import login_required
 from accounts.forms import userloginform
 
 
@@ -15,7 +16,8 @@ def logout(request):
     
 def login(request):
     
-    
+    if request.user.is_authenticated:
+        return redirect(reverse('index'))
     if request.method == "POST":
         login_form = userloginform(request.POST)
         
@@ -28,8 +30,14 @@ def login(request):
             if user:
                 auth.login(user=user, request=request)
                 messages.success(request, "You Have Successfully Logged Into Your Account")
+                return redirect(reverse('index'))
             else:
                 login_form.add_error(None, "Your Username Or Password Is Invalid")
     else:
         login_form = userloginform()
     return render(request, 'login.html', {'login_form': login_form})
+    
+@login_required   
+def forum(request):
+    return render(request, 'forum.html')
+    
