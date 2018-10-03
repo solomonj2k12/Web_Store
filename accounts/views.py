@@ -4,6 +4,10 @@ from django.contrib.auth.decorators import login_required
 from accounts.forms import userloginform
 
 
+@login_required   
+def forum(request):
+    return render(request, 'forum.html')
+
 def index(request):
     '''Return the index.html file '''
     return render(request, 'index.html')
@@ -37,7 +41,9 @@ def login(request):
         login_form = userloginform()
     return render(request, 'login.html', {'login_form': login_form})
     
-@login_required   
-def forum(request):
-    return render(request, 'forum.html')
+def register(request):
+    return render(request, "register.html")
+    
+    
+    
     
