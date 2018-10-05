@@ -2,4 +2,22 @@
 
 {% block page_title %}Developers Forum{% endblock %}
 
-{% block page_heading %}Welcome to the developers Forum{% endblock %}
+{% block page_heading %}Welcome to the Web Store{% endblock %}
+
+
+{% block content %}
+
+    <div class="container">
+        <h3>About This Page</h3>
+        <p>The purpose of this page is to offer fellow web developers or people who don't want to code, to get a helping hand with their web issues
+        by offering my services to them.</p> 
+        <p>Any user will need to first <a href="{% url 'registration' %}">register</a> an account with the site to gain access to 
+        to the store.</p> 
+        <p>From here depending what they what done they can purchase my services, if the work is small and a simple bug fix it will be free
+        but may take longer to be completed as it less of a pirortiy whereas more advance buys such as whole webpage will be comppletd quicker but at a 
+        higer cost.</p>
+        <p>I will give updates on customers requests as frequent as i can you can see that <a href="{% url 'forum' %}">here</a>.</p>
+         
+    </div>
+{% endblock %}
+
