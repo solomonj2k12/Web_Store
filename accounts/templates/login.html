@@ -5,10 +5,13 @@
 {% block page_heading %}Login into your account{% endblock %}
 
 {% block content %}
-<form method="POST">
+<div class="container">
+    <form method="POST">
     {% csrf_token %}
     {{ login_form }}   
-    <button type="submit">Login</button>
+    <button class="btn waves-effect waves-light cyan" type="submit">Login</button>
 </form>
 <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
+</div>
+
 {% endblock %}
