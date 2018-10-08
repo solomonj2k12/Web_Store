@@ -20,26 +20,28 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'forum' %}">Forum</a></li>
+                        <li><a href="{% url 'forum' %}">Updates</a></li>
                         <li><a href="{% url 'profile' %}">Profile</a></li>
                         <li><a href="{% url 'logout' %}">LogOut</a></li>
-                        <li><a href="#">Store</a></li>
+                        <li><a href="{% url 'products' %}">Store</a></li>
                     {% else %}
-                         <li><a href="{% url 'forum' %}">Forum</a></li>
+                         <li><a href="{% url 'forum' %}">Updates</a></li>
                          <li><a href="{% url 'login' %}">Login</a></li>
                          <li><a href="{% url 'registration' %}">Register</a></li>
+                         <li><a href="{% url 'products' %}">Store</a></li>
                     {% endif %}
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'forum' %}">Forum</a></li>
+                        <li><a href="{% url 'forum' %}">Updates</a></li>
                         <li><a href="{% url 'profile' %}">Profile</a></li>
                         <li><a href="{% url 'logout' %}">LogOut</a></li>
-                        <li><a href="#">Store</a></li>
+                        <li><a href="{% url 'products' %}">Store</a></li>
                     {% else %}
-                         <li><a href="{% url 'forum' %}">Forum</a></li>
+                         <li><a href="{% url 'forum' %}">Updates</a></li>
                          <li><a href="{% url 'login' %}">Login</a></li>
                          <li><a href="{% url 'registration' %}">Register</a></li>
+                         <li><a href="{% url 'products' %}">Store</a></li>
                     {% endif %}
                 </ul>
             </div>
