@@ -13,6 +13,7 @@ class Order(models.Model):
     street_address_2 = models.CharField(max_length=40, blank=True)
     county = models.CharField(max_length=40, blank=False)
     date = models.DateField()
+    email_order = models.CharField(max_length=100, blank=False)
     order_details = models.CharField(max_length=500, blank=False)
 
     def __str__(self):
