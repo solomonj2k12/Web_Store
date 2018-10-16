@@ -1,7 +1,9 @@
 from django.shortcuts import render, reverse, redirect
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
-
+@login_required()
 def view_cart(request):
     """
     this view displays everything in the cart
@@ -18,7 +20,7 @@ def add_to_cart(request, id):
     cart[id] = cart.get(id, quantity)
     
     request.session['cart'] = cart
-    return redirect(reverse('store'))
+    return redirect(reverse('view_cart'))
     
     
 def adjust_cart(request, id):

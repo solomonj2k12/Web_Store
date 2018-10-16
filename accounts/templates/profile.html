@@ -1,8 +1,10 @@
 {% extends 'base.html' %} 
 
 {% block page_title %}{{ user }}'s Profile{% endblock %} 
+<div id="heading">
+     {% block page_heading %}{{ user }}'s Profile{% endblock %}    
+</div>
 
-{% block page_heading %}{{ user }}'s Profile{% endblock %} 
 
 {% block content %}
 <div class="container">

@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
-
 {% block page_title %}Login page{% endblock %}
 
-{% block page_heading %}Login into your account{% endblock %}
+<div id="heading">
+     {% block page_heading %}Login into your account{% endblock %}   
+</div>
+
 
 {% block content %}
+<div class="container">
+    <p>If you already don't have account, you can <a href="{% url 'registration' %}">Register Here </a></p>
+</div>
 <div class="container">
     <form method="POST">
     {% csrf_token %}

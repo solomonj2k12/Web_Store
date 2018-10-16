@@ -5,9 +5,6 @@ from django.contrib.auth.models import User
 from accounts.forms import userloginform, UserRegistrationForm
 
 
-@login_required   
-def forum(request):
-    return render(request, 'forum.html')
 
 def index(request):
     '''Return the index.html file '''
