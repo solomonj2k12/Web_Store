@@ -2,17 +2,17 @@
 
 # Web Store
 
-The purpose of this application did change over the course of the development process, at the start i planned for the website to aid new web developers by providing a forum where they could express there issues to other developers and help each other, also offer a premium service where i would help them out, with any advance issues or creation of functionaility. However i adpated and worked on this idea to create a web application where i offer a store, which has many different services which link to web development, the purpose was to help to kind of people and they were other web developers who might be strugggling in creating certain things for their web application and to help people who don't want to go through the whole process of learning how to code and create a web application but rather pay and work with somebody else to get what they want. For both of these kind of people i offer my services.
+The purpose of this application did change over the course of the development process, at the start i planned for the website to aid new web developers by providing a forum where they could express their issues to other developers and help each other, also offer a premium service where i would help them out, with any advance issues or creation of functionality. However i adapted and worked on this idea to create a web application where i offer a store, which has many different services which link to web development, the purpose was to help to kind of people and they were other web developers who might be struggling in creating certain things for their web application and to help people who don't want to go through the whole process of learning how to code and create a web application but rather pay and work with somebody else to get what they want. For both of these kind of people i offer my services.
 
 As the website grew i would take on other people like me to help with completing tasks bought buy customers and then eventually create a web page bit like ebay where users could add their own products and services to help others and i would take a cut from this or customers could go straight to us for help.
 
 ## UX
 
-As mentioned before the web purpose did change over the development process so the mockups which were first made are not made for the correct website but i did use and then i adpated/worked on them. They can be found in the mockups folder in the repo
+As mentioned before the web purpose did change over the development process so the mockups which were first made are not made for the correct website but i did use and then i adapted/worked on them. They can be found in the mockups folder in the repo
 
-1. The first main thing for the webpage was a SignUp/SignIn feature, so that users could create an account to gain access to the main features of the site but also to have identity to the website, so i could identity them through the admin page.
+1. The first main thing for the webpage was a SignUp/SignIn feature, so that users could create an account to gain access to the main features of the site but also to have identity to the website, so i could identify them through the admin page.
 
-2. Next was the store, where i would advertise my products to the users, so that i could provide enough information to the user so they know what service to chose for their issue and good advertising will lead to more sales.
+2. Next was the store, where i would advertise my products to the users, so that i could provide enough information to the user so they know what service to choose for their issue and good advertising will lead to more sales.
 
 3. After this was of course was adding a cart feature, so that users could add products to the cart to get a overview of what they are buying and the cost of buying selected products, also to use the cart to remove any unwanted products or to add extra products.
 
@@ -22,7 +22,7 @@ As mentioned before the web purpose did change over the development process so t
 
 6. Finally there is a post feature, where customer can post reviews on the service, so other users can get idea of how good my services are.
 
-7. Also to aid in the purpose of the website there is a some sort of about on the home page of the site to aid in teaching new users on how the website works
+7. Also to aid in the purpose of the website there is some sort of about on the home page of the site to aid in teaching new users on how the website works
 
 8. Its a more of a work in progress but a simple profile page so the user can see what their email is for the site
 
@@ -32,13 +32,13 @@ As mentioned before the web purpose did change over the development process so t
 
 2. user logout function
 
-3. Forgot password function/ send real emails throught gmail accounts
+3. Forgot password function/ send real emails through gmail accounts
 
 4. Nav bar with mobile first design
 
 5. ability to add products to cart, adjust number of products in cart and remove products in cart
 
-6. complete checkout feature with stripe intergration
+6. complete checkout feature with stripe integration
 
 7. messages for logging in, logging out, products purchase and so on
 
@@ -106,7 +106,7 @@ https://web-store-sol.herokuapp.com/
 ###### Deployment
 
 Run Locally 
-1.	Clone or download this GitHub repository using the ‘Clone or Download’ button found on the main page, then unzip file, if you want you can take       certain function by them self for your purpose but you will need to change certain dependcies in the setting.py file
+1.	Clone or download this GitHub repository using the ‘Clone or Download’ button found on the main page, then unzip file, if you want you can take       certain function by them self for your purpose but you will need to change certain dependencies in the setting.py file
 
 2.	Open the project directory using an integrated development environment (IDE) software application, such as Cloud 9
 
@@ -144,7 +144,7 @@ os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "<key here>")"
 
 6. Also you will need to create your own super user so use the command "python3 manage.py createsuperuser" to do so
 
-7. Also if you have taken my whole repo you will need to go into setting.py and remove the # from import env so that the env.py file can be retireved also do both commands in the terminal "python3 manage.py makemigrations" and "python3 manage.py migrate", now the whole project should be ready to run locally but to make life easier find your .bash_aliases file, you might have to show hidden files and in that file add:
+7. Also if you have taken my whole repo you will need to go into setting.py and remove the # from import env so that the env.py file can be retrieved also do both commands in the terminal "python3 manage.py makemigrations" and "python3 manage.py migrate", now the whole project should be ready to run locally but to make life easier find your .bash_aliases file, you might have to show hidden files and in that file add:
 "alias run="python3 manage.py runserver $IP:$C9_PORT" but next do:
 .~/.bash_aliases 
 in the terminal to reload the file, so then just type run in your terminal to run the whole project.
@@ -227,7 +227,7 @@ also add DISABLE_COLLECTSTATIC will a key of 1
 - They are appropriately sized and colour scheme is simple and readable
     
 3. layout
-- layout is repsonsive across all elements thanks to bootstrap
+- layout is responsive across all elements thanks to bootstrap
     
 4.	Mobile and browser testing
 - I tested the application on the smaller screen devices and tablets, the application performs the same but layout may be different due to smaller      screen and i achieved this by the responsive design of bootstrap. i also performed all the test i stated above on mobile and tablet and i got the     same results
@@ -242,10 +242,10 @@ also add DISABLE_COLLECTSTATIC will a key of 1
 - user can login and logout with ease
 
 7. Posting reviews
-- after psoting new review, it added straight away with correct information
+- after posting new review, it added straight away with correct information
 
 8. Store/cart/checkout
-- tested adding all products, removing products, adjusting quanity of products and application performs correctly
+- tested adding all products, removing products, adjusting quantity of products and application performs correctly
 - checkout work i used the stripe testing payment details and the payments are made to stripe
 - also orders are add to admin panel
 - Evidence of this can be found in the mockups folder in the repo
