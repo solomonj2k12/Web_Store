@@ -8,53 +8,53 @@ As the website grew i would take on other people like me to help with completing
 
 ## UX
 
-As mentioned before the web purpose did change over the development process so the mockups which were first made are not made for the correct website but i did use and then i adpated/worked on them.
+As mentioned before the web purpose did change over the development process so the mockups which were first made are not made for the correct website but i did use and then i adpated/worked on them. They can be found in the mockups folder in the repo
 
-*The first main thing for the webpage was a SignUp/SignIn feature, so that users could create an account to gain access to the main features of the site but also to have identity to the website, so i could identity them through the admin page.
+1. The first main thing for the webpage was a SignUp/SignIn feature, so that users could create an account to gain access to the main features of the site but also to have identity to the website, so i could identity them through the admin page.
 
-*Next was the store, where i would advertise my products to the users, so that i could provide enough information to the user so they know what service to chose for their issue and good advertising will lead to more sales.
+2. Next was the store, where i would advertise my products to the users, so that i could provide enough information to the user so they know what service to chose for their issue and good advertising will lead to more sales.
 
-*After this was of course was adding a cart feature, so that users could add products to the cart to get a overview of what they are buying and the cost of buying selected products, also to use the cart to remove any unwanted products or to add extra products.
+3. After this was of course was adding a cart feature, so that users could add products to the cart to get a overview of what they are buying and the cost of buying selected products, also to use the cart to remove any unwanted products or to add extra products.
 
-*With a cart you need a checkout feature, so that the user can buy the items and enter their personal details correctly for the payment to go through, so that i could then start working on what they have bought.
+4. With a cart you need a checkout feature, so that the user can buy the items and enter their personal details correctly for the payment to go through, so that i could then start working on what they have bought.
 
-*To aid with the store i added a search bar, so when eventually there will be many products the search bar will filter the items in the store to help the user to find what they want.
+5. To aid with the store i added a search bar, so when eventually there will be many products the search bar will filter the items in the store to help the user to find what they want.
 
-*Fianlly there is a post feature, where customer can post reviews on the service, so other users can get idea of how good my services are.
+6. Finally there is a post feature, where customer can post reviews on the service, so other users can get idea of how good my services are.
 
-*Also to aid in the purpose of the website there is a some sort of about on the home page of the site to aid in teaching new users on how the website works
+7. Also to aid in the purpose of the website there is a some sort of about on the home page of the site to aid in teaching new users on how the website works
 
-*Its a more of a work in progress but a simple profile page so the user can see what their email is for the site
+8. Its a more of a work in progress but a simple profile page so the user can see what their email is for the site
 
 ### Features
 
-*SignUp/SignIn forms for user registration
+1. SignUp/SignIn forms for user registration
 
-*user logout function
+2. user logout function
 
-*Forgot password function/ send real emails throught gmail accounts
+3. Forgot password function/ send real emails throught gmail accounts
 
-*Nav bar with mobile first design
+4. Nav bar with mobile first design
 
-*ability to add products to cart, adjust number of products in cart and remove products in cart
+5. ability to add products to cart, adjust number of products in cart and remove products in cart
 
-*complete checkout feature with stripe intergration
+6. complete checkout feature with stripe intergration
 
-*messages for logging in, logging out, products purchase and so on
+7. messages for logging in, logging out, products purchase and so on
 
-*profile page
+8. profile page
 
-*service review form with tags 
+9. service review form with tags 
 
-*user admin page to view orders, users and add new products
+10. user admin page to view orders, users and add new products
 
 #### Feature i would like to add
 
-*more advance profile page
+1. more advance profile page
 
-*individual pages for each product so i can add more information in description and give a better overview
+2. individual pages for each product so i can add more information in description and give a better overview
 
-*profile id on reviews
+3. profile id on reviews
 
 ##### Technologies Used
 
@@ -248,7 +248,7 @@ also add DISABLE_COLLECTSTATIC will a key of 1
 - tested adding all products, removing products, adjusting quanity of products and application performs correctly
 - checkout work i used the stripe testing payment details and the payments are made to stripe
 - also orders are add to admin panel
-![Image of payment](https://octodex.github.com/images/yaktocat.png)
+- Evidence of this can be found in the mockups folder in the repo
 9. test.py
 - There are some tests made on test.py file across project
 
